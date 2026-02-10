@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Promise Day 🤞</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Classy & Readable Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ad1457,#e53935);
+  font-family:'Playfair Display', serif;
+  color:#ffffff;
+}
+.card{
+  width:90%;
+  max-width:440px;
+  background:rgba(0,0,0,0.35);
+  padding:28px;
+  border-radius:22px;
+  text-align:center;
+}
+h1{
+  font-size:26px;
+  margin-bottom:12px;
+  font-weight:600;
+}
+p{
+  display:none;
+  font-size:18px;
+  line-height:1.8;
+  margin-top:16px;
+}
+.line6{
+  display:none;
+  font-size:19px;
+  color:#ffd6d6;
+  margin-top:20px;
+  font-style:italic;
+  font-weight:600;
+  line-height:2;
+}
+.line7{
+  display:none;
+  font-size:18px;
+  margin-top:22px;
+  font-weight:500;
+}
+button{
+  margin-top:26px;
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  background:#ffffff;
+  color:#ad1457;
+  cursor:pointer;
+}
+.signature{
+  margin-top:22px;
+  font-size:15px;
+  display:none;
+  opacity:0.9;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>Promise Day 🤞</h1>
+
+<p id="m1">Aaj ka din thoda khaas lag raha hai.</p>
+
+<p id="m2">Shayad isliye kyunki tumhari yaad kuch zyada hi aa rahi hai.</p>
+
+<p id="m3">Bina kisi wajah ke bhi, tumhara khayal sukoon deta hai.</p>
+
+<p id="m4">Kuch rishte bol kar nahi, mehsoos karke samjhe jaate hain.</p>
+
+<p id="m5">Aur ye baat main dil se keh pa raha hoon.</p>
+
+<p id="m6" class="line6">
+In English we say:<br>
+<b>Promise 🤞</b><br><br>
+But in shayari 📜<br>
+<b>Aladin said:</b><br>
+Yun to waadon ka shor bahut hota hai duniya mein,<br>
+Magar jo tumse kiya, usey jeena jaanta hoon,<br>
+Haath chhodne ki baat kabhi dil mein aayi hi nahi,<br>
+Saath chalna hi nahi, saath rehna maanta hoon.
+</p>
+
+<p id="m7" class="line7">
+Fir bhi agar tumko koi promise chahiye, to be-jijhak bolo.
+</p>
+
+<div class="signature" id="sign">— Tumhara Bhola Bhala Future Husband 🩷</div>
+
+<button onclick="showMessage()">Read Message ❤️</button>
+</div>
+
+<script>
+let i=1;
+function showMessage(){
+  if(i<=5){
+    document.getElementById("m"+i).style.display="block";
+    i++;
+  } 
+  else if(i==6){
+    document.getElementById("m6").style.display="block";
+    i++;
+  }
+  else if(i==7){
+    document.getElementById("m7").style.display="block";
+    i++;
+  }
+  else{
+    document.getElementById("sign").style.display="block";
+  }
+}
+</script>
+
+</body>
+</html>
